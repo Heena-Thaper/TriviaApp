@@ -10,10 +10,12 @@ import UIKit
 
 class RoundOneVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //MARKS: OUTLETS
     @IBOutlet weak var questionLbl: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
   
+    //MARKS: VARIABLES
     var answerOptions = [""]
     var details = GameDetailsModel()
     var selectedOption = [String]()

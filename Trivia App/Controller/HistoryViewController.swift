@@ -18,6 +18,7 @@ class HistoryViewController: UIViewController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 228/255, green: 34/255, blue: 35/255, alpha: 1)
         self.navigationItem.title = summary
         fetchGameDetails()
         configTableView()

@@ -13,7 +13,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    
+    //MARKS: OUTLETS
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var nextButton: UIButton!

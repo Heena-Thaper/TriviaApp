@@ -10,10 +10,12 @@ import UIKit
 
 class RoundTwoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    //MARKS: OUTLETS
     @IBOutlet weak var questionLbl: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nextButton: UIButton!
     
+    //MARKS: VARIABLES
     var answerOptions = [""]
     var details = GameDetailsModel()
     var selectedOption = [String]()
@@ -32,6 +34,7 @@ class RoundTwoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         nextVC.details = details
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
+    //MARKS: Saving details in CORE DATA
     func saveData(){
         for options in selectedOption {
               selectedOptionString.append(options)
