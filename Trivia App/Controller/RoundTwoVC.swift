@@ -61,7 +61,7 @@ class RoundTwoVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
         cell.answerLbl.text = answerOptions[indexPath.row]
-        cell.setViewForCheckboxCell()
+        cell.setViewForRadioCell()
         cell.delegate = self
         cell.tag = indexPath.row
         return cell

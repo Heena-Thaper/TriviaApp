@@ -21,6 +21,8 @@ class CheckBoxCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        checkBoxButton.isSelected = false
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -35,16 +37,15 @@ class CheckBoxCell: UITableViewCell {
         }else {
             delegate?.checkboxUnselected(at: self.tag)
         }
-        
+        setViewForRadioCell()
+
     }
     
     func setViewForRadioCell(){
-        checkBoxButton.isSelected = false
         checkBoxButton.setImage(UIImage(named: "radioOFF"), for: .normal)
         checkBoxButton.setImage(UIImage(named: "radioON"), for: .selected)
     }
     func setViewForCheckboxCell(){
-        checkBoxButton.isSelected = false
         checkBoxButton.setImage(UIImage(named: "checkboxUnselected"), for: .normal)
         checkBoxButton.setImage(UIImage(named: "checkboxSelected"), for: .selected)
 
