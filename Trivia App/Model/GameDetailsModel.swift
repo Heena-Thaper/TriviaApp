@@ -20,7 +20,7 @@ struct GameDetailsModel {
     }
     
     static func getRoundTwoOptions() -> [String] {
-        let options = ["White","Yellow", "Orange", "Green"]
+        let options =  ["White","Yellow", "Orange", "Green"]
         return options
    }
 }
